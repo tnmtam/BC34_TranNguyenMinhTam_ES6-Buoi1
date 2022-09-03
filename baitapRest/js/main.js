@@ -21,8 +21,21 @@ const avg = (...numbers) => {
 };
 
 document.getElementById('btnKhoi1').onclick = () => {
-    document.getElementById('tbKhoi1').innerHTML = avg(toan,ly,hoa);
+    console.log(toan);
+    console.log(ly);
+    console.log(hoa);
+    let diemTB = (toan + ly + hoa) / 3;
+    document.getElementById('tbKhoi1').innerHTML = diemTB;
 };
 document.getElementById('btnKhoi2').onclick = () => {
-    document.getElementById('tbKhoi2').innerHTML = avg(van, su, dia, english);
+    let diemTB = (van + su + dia + english) / 4;
+    document.getElementById('tbKhoi2').innerHTML = diemTB;
 };
+
+
+// document.getElementById('btnKhoi1').onclick = () => {
+//     document.getElementById('tbKhoi1').innerHTML = avg(toan,ly,hoa);
+// };
+// document.getElementById('btnKhoi2').onclick = () => {
+//     document.getElementById('tbKhoi2').innerHTML = avg(van, su, dia, english);
+// };
